@@ -6,42 +6,42 @@
 Firstly, look at files that I create at the same level with `/src` and  `/public` 
 There are `.env`,`env-example.md`(for name examples of enviroment variables) and `Dockerfile`. Others are created on this level by default build of vite. 
 
-![alt text](image-1.png)
+![alt text](/images/initial.png)
 
 # `/public`
 
 In this directory I save only icon,that will be used as a tab icon
 
-![alt text](image-2.png)
+![alt text](/images/public.png)
 
 # `/src`
 
 `/src` directory contain a lot of directories and by default `App.tsx` and `main.tsx` that are on the same level
 
-![alt text](image-3.png)
+![alt text](/images/src.png)
 
 ## `/src/App.tsx`
 used as container for `routes`
 
-![alt text](image-23.png)
+![alt text](/images/src/App.tsx.png)
 
 ## `/src/main.tsx`
 used as container for `providers or any methods that must be called as soon as possible`
 
-![alt text](image-24.png)
+![alt text](/images/src/main.tsx.png)
 
 ## `/src/assets/`
 
 `/src/assets` are created for `Fonts`, `Icons` and `Images`
 
-![alt text](image-4.png)
+![alt text](/images/src/assets/assets.png)
 
 ### `/src/assets/fonts` 
 have this structure for fonts that I save localy. 
 
 #### `Rule #1` Easy describe that way `1 font - 1 directory`
 
-![alt text](image-5.png)
+![alt text](/images/src/assets/fonts/fonts.png)
 
 ### `/src/assets/icons`
 
@@ -52,78 +52,77 @@ And the most important thing with icons, that I add `-icon` to all names.This is
 
 #### `Rule #2` `/src/assets/icons` must contain only vector icons 
   
-![alt text](image-7.png)
+![alt text](/images/src/assets/icons/icons.png)
 
 ### `/src/assets/images`
 use the same rules as `/src/assets/icons` but there is no cosmetic suffix names.
 Here important is that `@/images` contain files only with image file format (`.png`, `.jpg` etc.)
 
-![alt text](image-8.png)
-
+![alt text](/images/src/assets/images/images.png)
 
 ## `/src/axios`
 here I save files for API default setting for `axios` lib
 Any other API lib or any default API rules will be created in same directory and `Directory name depends on lib, that used for API requests`
 
-![alt text](image-9.png)
+![alt text](/images/src/axios/axios.png)
 
 ## `/src/components`
 at this level you can see base components directories
 
 #### `Rule #3` When I work with base css, I always create a file with the same name of component in lowercase in component directory
 
-![alt text](image-13.png)
+![alt text](/images/src/components/components.png)
 
 ### `src/components/UI`
 directory that used for many times reusable components (like `buttons`, `inputs`, `selects` etc.)
 
 #### `Rule #4` `/src/components/UI` contain only reusable components like list items, inputs, selects, buttons, titles. `/src/components` contain a huge components that are contructed from small ones with additional logic 
 
-![alt text](image-12.png)
+![alt text](/images/src/components/UI/UI.png)
 
 ## `/src/consts`
 here I save all objects, arrays that will be used by components
 
-![alt text](image-14.png)
+![alt text](/images/src/consts/consts.png)
 
 (Example of object that save for system messages)
 
-![alt text](image-15.png)
+![alt text](/images/src/consts/example.png)
 
 ## `/src/context`
 contain context hooks.
 Also, can be used for list of slices, if you use `RTK`
 
-![alt text](image-16.png)
+![alt text](/images/src/context/context.png)
 
 ## `/src/enums`
 contain enums for constans names.
 
-![alt text](image-17.png)
+![alt text](/images/src/enums/enums.png)
 
 (Example of name that this directory used for)
 
-![alt text](image-18.png)
+![alt text](/images/src/enums/example.png)
 
 ## `/src/helpers`
 contain any helper function that will used for API requests or HOCs
 
-![alt text](image-19.png)
+![alt text](/images/src/helpers/helpers.png)
 
 ## `/src/hooks`
 hooks that contain default needed logic. For example, callback when I click outside triggered component
 
-![alt text](image-20.png)
+![alt text](/images/src/hooks/hooks.png)
 
 ## `/src/layout`
 created for `Layout` component that used like container for components,that must be at the highest level in html structure
 For example, `modals`, `side menus`, `system messages` etc.
 
-![alt text](image-21.png)
+![alt text](/images/src/layout/layout.png)
 
 (Example)
 
-![alt text](image-22.png)
+![alt text](/images/src/layout/example.png)
 
 ## `/src/models`
 contain directories with .ts files for `types`, `interfaces`
@@ -131,40 +130,40 @@ Also, must be grouped up by additional directories (like `@/models/API`)
 
 #### `Rule #5` All types and interafaces must be saved in `@/models`
 
-![alt text](image-25.png)
+![alt text](/images/src/models/models.png)
 
 ## `/src/regexp`
 there is regular expression constans
 
-![alt text](image-26.png)
+![alt text](/images/src/regexp/regexp.png)
 
 ## `/src/routes`
 contain file that used for route logic (like protected routes)
 
-![alt text](image-27.png)
+![alt text](/images/src/routes/routes.png)
 
 (Example)
 
-![alt text](image-28.png)
+![alt text](/images/src/routes/example.png)
 
 ## `/src/service`
 used for API requests functions
 
-![alt text](image-29.png)
+![alt text](/images/src/service/service.png)
 
 (Example)
 (when I work with `axios`, I always write functions in service, but `Class` aren't forbidden)
 
-![alt text](image-30.png)
+![alt text](/images/src/service/example.png)
 
 ## `/src/styles`
 used for css files that must be reachable in hole project (`color and font variables`, animations etc.)
 `@/styles/index.css` collect all css files and is exported for `main.tsx`
 
-![alt text](image-31.png)
+![alt text](/images/src/styles/styles.png)
 
 ## `/src/utils`
 directory with base `js/ts` functions
 
-![alt text](image-32.png)
+![alt text](/images/src/utils/utils.png)
 
